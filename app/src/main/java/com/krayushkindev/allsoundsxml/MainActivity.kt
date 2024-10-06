@@ -34,8 +34,7 @@ class MainActivity : AppCompatActivity() {
         setObservers()
 
         binding.stopSoundsButton.setOnClickListener {
-//            stopAndSetNullableMediaPlayer()
-            viewModel?.startTestFun()
+            stopAndSetNullableMediaPlayer()
         }
     }
 
