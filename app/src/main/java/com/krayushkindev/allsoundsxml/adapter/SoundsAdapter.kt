@@ -4,13 +4,16 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.krayushkindev.allsoundsxml.constant.Constants.ZERO_INT
 import com.krayushkindev.allsoundsxml.databinding.SoundItemBinding
 import com.krayushkindev.allsoundsxml.model.SoundModel
 
 class SoundsAdapter: RecyclerView.Adapter<SoundsAdapter.ViewHolder>() {
 
     private var allSounds: List<SoundModel> = emptyList()
-    lateinit var onSoundClick: (thisSound: SoundModel) -> Unit
+    lateinit var onSoundClick: (thisSound: SoundModel, currentPosition: Int) -> Unit
+    private var currentPosition: Int = ZERO_INT
+    private var oldPosition: Int = ZERO_INT
 
     @SuppressLint("NotifyDataSetChanged")
     fun initSounds(allSounds: List<SoundModel>) {
@@ -24,7 +27,7 @@ class SoundsAdapter: RecyclerView.Adapter<SoundsAdapter.ViewHolder>() {
                 soundTitle.text = sound.audioName
 
                 root.setOnClickListener {
-                    onSoundClick.invoke(sound)
+                    onSoundClick.invoke(sound, adapterPosition)
                 }
             }
         }
@@ -37,5 +40,13 @@ class SoundsAdapter: RecyclerView.Adapter<SoundsAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(allSounds[position])
+    }
+
+    fun updateView(currentPosition: Int) {
+        // TODO: @AndreiKrayushkin [05.02.2024] []{реализовать сброс и активацию новой позиции}
+    }
+
+    fun refreshPosition(oldPosition: Int) {
+        // TODO: @AndreiKrayushkin [05.02.2024] []{реализовать сброс и активацию новой позиции}
     }
 }

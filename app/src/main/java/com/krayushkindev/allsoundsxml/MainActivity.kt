@@ -32,6 +32,11 @@ class MainActivity : AppCompatActivity() {
         initSounds()
         initAdapter()
         setObservers()
+
+        binding.stopSoundsButton.setOnClickListener {
+//            stopAndSetNullableMediaPlayer()
+            viewModel?.startTestFun()
+        }
     }
 
     override fun onDestroy() {
@@ -46,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initAdapter() {
         soundsAdapter = SoundsAdapter().apply {
-            onSoundClick = { sound: SoundModel ->
+            onSoundClick = { sound: SoundModel, _ ->
                 playMedia(resId = sound.audioResId)
             }
         }
@@ -65,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         mediaPlayer = MediaPlayer.create(this, resId)?.apply {
             start()
             /*setOnCompletionListener {
-                // TODO: @AndreiKrayushkin [15.12.2023] [backlog]{если что-то нужно, то запихнуть сюда}
+                // TODO: @AndreiKrayushkin [15.12.2023] [backlog]{если что-то нужно после завершения звука, то запихнуть сюда}
             }*/
         }
     }
