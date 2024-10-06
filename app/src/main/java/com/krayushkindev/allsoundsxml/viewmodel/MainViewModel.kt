@@ -26,6 +26,32 @@ class MainViewModel : ViewModel(), ViewModelProvider.Factory {
         _allSounds.value = listOf(
             SoundModel(
                 id = 10,
+                audioName = "Чайник",
+                audioResId = R.raw.zvuk_kipjaschego_chajnika
+            ),
+            SoundModel(
+                id = 1,
+                audioName = "Ребенок плачет",
+                audioResId = R.raw.rebenok_plachit
+            ),
+            SoundModel(
+                id = 1,
+                audioName = "Фен",
+                audioResId = R.raw.zvuk_rabotayuschego_fena
+            ),
+            SoundModel(
+                id = 1,
+                audioName = "Пылесос",
+                audioResId = R.raw.pyilesos_rabotaet_uborka
+            ),
+            SoundModel(
+                id = 3,
+                audioName = "Дождь",
+                audioResId = R.raw.prolivnoy_dojd
+            ),
+
+            SoundModel(
+                id = 10,
                 audioName = "Лев",
                 audioResId = R.raw.lev_rychit
             ),
