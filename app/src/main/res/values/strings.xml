@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">All sounds xml</string>
+    <string name="stop_all_sounds">STOP</string>
+    <string name="name_lion">Лев</string>
+    <string name="name_kolokolchik">Колокольчик</string>
+    <string name="name_molotok">Молоток</string>
+    <string name="name_cyplyata_pischat_ptenccy_na_ferme">Цыплята</string>
+    <string name="name_gusi_gagochut">Гуси</string>
+    <string name="name_avto_zavoditsia_i_uezjaet">Автомобиль</string>
+    <string name="name_hrjukane_vizg_svinei">Свиньи</string>
+    <string name="name_lai_sobaki">Собака</string>
+    <string name="name_kot_myaukaet">Кот</string>
+    <string name="name_mychanie_korovy">Корова</string>
+    <string name="name_rzhanie_loshadi">Лошадь</string>
+    <string name="name_kozel_i_koza_blejut">Коза</string>
+    <string name="name_kryakaet_utka">Утка</string>
+    <string name="name_kukushka">Кукушка</string>
+    <string name="name_lyagushka">Лягушка</string>
+    <string name="name_petuh_krichit">Петух</string>
+    <string name="name_soroka">Сорока</string>
+    <string name="name_mysh">Мышь</string>
+    <string name="name_vorobi">Воробьи</string>
+    <string name="name_fen">Фен</string>
+    <string name="name_chasy_tikajut">Часы</string>
 </resources>
