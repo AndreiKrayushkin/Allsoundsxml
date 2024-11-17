@@ -1,8 +1,8 @@
-package com.krayushkindev.allsoundsxml.model
+package com.krayushkindev.allsounds.state.model
 
 import androidx.annotation.RawRes
-import com.krayushkindev.allsoundsxml.constant.Constants.ZERO_INT
-import com.krayushkindev.allsoundsxml.extension.empty
+import com.krayushkindev.allsounds.core.constant.Constants.ZERO_INT
+import com.krayushkindev.allsounds.core.extension.empty
 
 data class SoundModel(
     val id: Int = ZERO_INT,

@@ -1,0 +1,3 @@
+package com.krayushkindev.allsounds.core.resource
+
+interface BaseInterfaceResource
